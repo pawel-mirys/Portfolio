@@ -9,13 +9,15 @@ import { Projects } from './sections/Projects/Projects';
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <About />
-      <Projects />
-      <Contact />
-      <Hero />
-      <Footer />
+    <div id="App">
+      <Nav pageWrapId={'page-wrap'} outerContainerId={'App'} />
+      <div id="page-wrap">
+        <About />
+        <Projects />
+        <Contact />
+        <Hero />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -1,9 +1,18 @@
 // Colors
 $background: #212121;
 $background2: #ffffff;
+$background3: #353535;
 $primary: #2da1f4;
 $secondary: #5f2cc9;
 $black: #454545;
 $dark-gray: #9a9a9a;
 $gray: #c3c2c2;
 $light-gray: #f6f6f6;
+
+// Mixins
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}

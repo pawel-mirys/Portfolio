@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+.burger {
+  @include flex(space-around, center, column);
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 2rem;
+  background-color: $light-gray;
+  border-radius: 3rem;
+  transition: 0.5s all ease;
+}
+.bar1 {
+  &.active {
+    transform: rotateZ(45deg);
+    position: absolute;
+  }
+}
+
+.bar2 {
+  &.active {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.bar3 {
+  &.active {
+    transform: rotateZ(-45deg);
+    position: absolute;
+  }
+}
