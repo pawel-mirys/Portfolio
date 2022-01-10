@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styles from './Burger.module.scss';
 
+type buttonProps = {};
+
 export const Burger = () => {
   const [open, setOpen] = useState(false);
 
@@ -23,9 +25,11 @@ export const Burger = () => {
         onClick={() => {
           setOpen(false);
         }}
-        className={styles.close}
+        className={styles.burger}
       >
-        x
+        <span className={`${styles.bar} ${styles.bar1_active}`}></span>
+        <span className={`${styles.bar} ${styles.bar2_active}`}></span>
+        <span className={`${styles.bar} ${styles.bar3_active}`}></span>
       </div>
     );
   }

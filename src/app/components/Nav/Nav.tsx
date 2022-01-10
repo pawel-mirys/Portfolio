@@ -1,10 +1,8 @@
-import { slide as Menu } from 'react-burger-menu';
-
 import styles from './Nav.module.scss';
 import { Image } from '../Image/Image';
 import { Burger } from '../Burger/Burger';
 
-export const Nav = ({ ...props }) => {
+export const Nav = () => {
   return (
     <div className={styles.navContainer}>
       <div className={styles.navbar}>

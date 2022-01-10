@@ -10,7 +10,7 @@ import { Projects } from './sections/Projects/Projects';
 function App() {
   return (
     <div id="App">
-      <Nav pageWrapId={'page-wrap'} outerContainerId={'App'} />
+      <Nav />
       <div id="page-wrap">
         <About />
         <Projects />
