@@ -1,36 +1,32 @@
-import { useState } from 'react';
 import styles from './Burger.module.scss';
 
-type buttonProps = {};
+type buttonProps = {
+  open: boolean;
+  setOpen: Function;
+};
 
-export const Burger = () => {
-  const [open, setOpen] = useState(false);
+export const Burger = ({ open, setOpen }: buttonProps) => {
+  const bars = {
+    bar1: '',
+    bar2: '',
+    bar3: '',
+  };
 
-  if (!open) {
-    return (
-      <div
-        onClick={() => {
-          setOpen(true);
-        }}
-        className={styles.burger}
-      >
-        <span className={`${styles.bar} ${styles.bar1}`}></span>
-        <span className={`${styles.bar} ${styles.bar2}`}></span>
-        <span className={`${styles.bar} ${styles.bar3}`}></span>
-      </div>
-    );
-  } else {
-    return (
-      <div
-        onClick={() => {
-          setOpen(false);
-        }}
-        className={styles.burger}
-      >
-        <span className={`${styles.bar} ${styles.bar1_active}`}></span>
-        <span className={`${styles.bar} ${styles.bar2_active}`}></span>
-        <span className={`${styles.bar} ${styles.bar3_active}`}></span>
-      </div>
-    );
+  if (open === true) {
+    bars.bar1 = styles.bar1_active;
+    bars.bar2 = styles.bar2_active;
+    bars.bar3 = styles.bar3_active;
   }
+  return (
+    <div
+      onClick={() => {
+        setOpen();
+      }}
+      className={styles.burger}
+    >
+      <span className={`${styles.bar} ${bars.bar1}`}></span>
+      <span className={`${styles.bar} ${bars.bar2}`}></span>
+      <span className={`${styles.bar} ${bars.bar3}`}></span>
+    </div>
+  );
 };

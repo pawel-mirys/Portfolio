@@ -1,16 +1,32 @@
 import styles from './Nav.module.scss';
 import { Image } from '../Image/Image';
 import { Burger } from '../Burger/Burger';
+import { useState } from 'react';
 
 export const Nav = () => {
+  const [open, setOpen] = useState(false);
+  let activeListStyle: string = '';
+  if (open === true) {
+    activeListStyle = styles.list_active;
+  }
+
   return (
     <div className={styles.navContainer}>
       <div className={styles.navbar}>
         <a href="#">
           <Image path="/assets/images/logo100.png" alt="Logo" />
         </a>
-        <Burger />
-        <ul className={styles.list}>
+        <Burger
+          open={open}
+          setOpen={() => {
+            if (open === false) {
+              setOpen(true);
+            } else {
+              setOpen(false);
+            }
+          }}
+        />
+        <ul className={`${styles.list} ${activeListStyle}`}>
           <li>
             <a className={styles.link} href="#About">
               O mnie
