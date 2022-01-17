@@ -1,0 +1,32 @@
+@import '../../variables.scss';
+
+.aboutContainer {
+  height: 827px;
+  width: 100%;
+  background-color: $background;
+  transform: translateY(100px);
+  color: $light-gray;
+}
+
+.about {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  @include flex(space-between, center, row);
+}
+
+.greet {
+  @include flex(space-around, flex-start, column);
+  height: 420px;
+  h1 {
+    font-size: 70px;
+  }
+  h4 {
+    font-size: 40px;
+  }
+}
+
+.hero {
+  height: 635px;
+  width: 600px;
+}

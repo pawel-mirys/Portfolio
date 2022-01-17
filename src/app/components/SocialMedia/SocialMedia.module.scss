@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.socialMediaContainer {
+  @include flex(space-between, center, row);
+  width: 100%;
+}
+
+.socialIcon {
+  position: relative;
+  &::after {
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    border: 0.5px solid transparent;
+    border-radius: 5rem;
+    transition: 0.2s all ease-in-out;
+    content: '';
+    width: 87%;
+    height: 85%;
+    z-index: -2;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    &::after {
+      background-color: $primary;
+      top: 1px;
+    }
+  }
+}
+
+.iconBig {
+  width: 90px;
+}
