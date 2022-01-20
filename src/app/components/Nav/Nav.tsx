@@ -1,7 +1,8 @@
+import { useState } from 'react';
+
 import styles from './Nav.module.scss';
 import { Image } from '../Image/Image';
 import { Burger } from '../Burger/Burger';
-import { useState } from 'react';
 
 export const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -11,10 +12,14 @@ export const Nav = () => {
   }
 
   return (
-    <div className={styles.navContainer}>
+    <nav className={styles.navContainer}>
       <div className={styles.navbar}>
         <a href="#">
-          <Image path="/assets/images/logo100.png" alt="Logo" />
+          <Image
+            className="logo"
+            path="/assets/images/logo100.png"
+            alt="Logo"
+          />
         </a>
         <Burger
           open={open}
@@ -44,6 +49,6 @@ export const Nav = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
