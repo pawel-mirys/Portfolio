@@ -12,7 +12,7 @@ export const Nav = () => {
   }
 
   return (
-    <div className={styles.navContainer}>
+    <nav className={styles.navContainer}>
       <div className={styles.navbar}>
         <a href="#">
           <Image
@@ -49,6 +49,6 @@ export const Nav = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };

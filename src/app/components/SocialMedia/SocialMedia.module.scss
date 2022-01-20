@@ -6,6 +6,7 @@
 }
 
 .socialIcon {
+  transition: 0.2s all ease-in-out;
   position: relative;
   &::after {
     position: absolute;
@@ -30,4 +31,16 @@
 
 .iconBig {
   width: 90px;
+}
+
+@media screen and (max-width: 1368px) {
+  .iconBig {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .iconBig {
+    width: 50px;
+  }
 }
