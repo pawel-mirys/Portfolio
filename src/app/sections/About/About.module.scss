@@ -1,0 +1,72 @@
+@import '../../variables.scss';
+
+.aboutContainer {
+  height: 90vh;
+  width: 100%;
+}
+.circleLeft,
+.circleRight {
+  --borderWidth: 600px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--borderWidth);
+  width: var(--borderWidth);
+  background: linear-gradient(
+    60deg,
+    $primary,
+    $secondary,
+    $primary,
+    $secondary,
+    $primary,
+    $secondary
+  );
+  border-radius: 50%;
+  z-index: -1;
+  animation: animatedgradient 5s ease alternate infinite;
+  background-size: 300% 300%;
+  .background {
+    position: absolute;
+    width: calc(var(--borderWidth) - 30px);
+    height: calc(var(--borderWidth) - 30px);
+    border-radius: 50%;
+    background-color: white;
+  }
+}
+
+.circleLeft {
+  transform: translate(-50%, -50%);
+}
+.circleRight {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.infoWrapper {
+  @include flex(flex-start, center, column);
+  padding: 145px 0 0 0;
+  margin: auto;
+  height: 60%;
+  width: 70%;
+
+  h4 {
+    font-size: 40px;
+  }
+  p {
+    margin: 90px 0 90px 0;
+    font-size: 18px;
+  }
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

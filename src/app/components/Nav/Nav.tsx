@@ -24,16 +24,12 @@ export const Nav = () => {
         <Burger
           open={open}
           setOpen={() => {
-            if (open === false) {
-              setOpen(true);
-            } else {
-              setOpen(false);
-            }
+            open === false ? setOpen(true) : setOpen(false);
           }}
         />
         <ul className={`${styles.list} ${activeListStyle}`}>
           <li>
-            <a className={styles.link} href="#About">
+            <a className={styles.link} href="#about">
               O mnie
             </a>
           </li>
