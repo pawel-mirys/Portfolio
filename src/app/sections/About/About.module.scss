@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .aboutContainer {
-  height: 90vh;
+  height: 120vh;
   width: 100%;
 }
 .circleLeft,
@@ -13,15 +13,7 @@
   align-items: center;
   height: var(--borderWidth);
   width: var(--borderWidth);
-  background: linear-gradient(
-    60deg,
-    $primary,
-    $secondary,
-    $primary,
-    $secondary,
-    $primary,
-    $secondary
-  );
+  background: $gradient;
   border-radius: 50%;
   z-index: -1;
   animation: animatedgradient 5s ease alternate infinite;
@@ -47,7 +39,7 @@
   @include flex(flex-start, center, column);
   padding: 145px 0 0 0;
   margin: auto;
-  height: 60%;
+  height: 500px;
   width: 70%;
 
   h4 {

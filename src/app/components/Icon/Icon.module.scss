@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+.iconContainer {
+  @include flex(space-between, center, column);
+  width: 130px;
+  height: 120px;
+  margin: 10px;
+}
+
+.description {
+  font-size: 20px;
+  color: $light-gray;
+}

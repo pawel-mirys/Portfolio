@@ -8,6 +8,19 @@ $black: #454545;
 $dark-gray: #9a9a9a;
 $gray: #c3c2c2;
 $light-gray: #f6f6f6;
+$gradient: linear-gradient(
+  50deg,
+  $primary,
+  $secondary,
+  $primary,
+  $secondary,
+  $primary,
+  $secondary,
+  $primary,
+  $secondary,
+  $primary,
+  $secondary
+);
 
 // Mixins
 @mixin flex($justify, $align, $direction) {

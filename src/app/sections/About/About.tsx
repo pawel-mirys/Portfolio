@@ -1,4 +1,6 @@
 import { ActionButton } from '../../components/ActionButton/ActionButton';
+import { Skills } from '../../components/Skills/Skill';
+
 import styles from './About.module.scss';
 export const About = () => {
   return (
@@ -22,6 +24,7 @@ export const About = () => {
         </p>
         <ActionButton doAction={() => {}} text="Czytaj Więcej" />
       </div>
+      <Skills />
     </section>
   );
 };
