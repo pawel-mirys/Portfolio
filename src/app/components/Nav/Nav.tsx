@@ -34,12 +34,12 @@ export const Nav = () => {
             </a>
           </li>
           <li>
-            <a className={styles.link} href="#Projects">
+            <a className={styles.link} href="#projects">
               Projekty
             </a>
           </li>
           <li>
-            <a className={styles.link} href="#Contakt">
+            <a className={styles.link} href="#contakt">
               Kontakt
             </a>
           </li>

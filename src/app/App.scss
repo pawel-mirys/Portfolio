@@ -12,3 +12,21 @@ body {
 .App {
   text-align: center;
 }
+
+// Carousel Style Fix
+
+.slick-arrow {
+  &::before {
+    color: white !important;
+  }
+}
+
+.slick-dots {
+  li {
+    button {
+      &::before {
+        color: white !important;
+      }
+    }
+  }
+}
