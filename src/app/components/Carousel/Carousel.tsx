@@ -5,6 +5,7 @@ import styles from './Carousel.module.scss';
 
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
+import { useState } from 'react';
 
 export const Carousel = () => {
   const settings = {
@@ -16,11 +17,12 @@ export const Carousel = () => {
     lazyload: true,
     fade: true,
   };
+
   return (
     <div className={styles.silderContainer}>
       <Slider className={styles.carousel} {...settings}>
         <div className={styles.slide}>
-          <a href="">
+          <a href="" id={styles.slide}>
             <Image
               className={styles.sliderItem}
               path="/assets/images/EET.png"
