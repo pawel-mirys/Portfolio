@@ -39,7 +39,7 @@ export const Nav = () => {
             </a>
           </li>
           <li>
-            <a className={styles.link} href="#contakt">
+            <a className={styles.link} href="#contact">
               Kontakt
             </a>
           </li>
