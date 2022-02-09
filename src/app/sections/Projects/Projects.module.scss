@@ -1,0 +1,19 @@
+@import '../../variables.scss';
+.projectsContainer {
+  background-color: $background;
+  width: 100%;
+  height: 960px;
+  color: white;
+}
+
+.projectsWrapper {
+  @include flex(space-around, center, column);
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  padding: 200px 0 0 0;
+
+  h4 {
+    font-size: 40px;
+  }
+}
