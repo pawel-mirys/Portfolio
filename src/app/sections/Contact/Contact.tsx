@@ -1,27 +1,39 @@
-import { ActionButton } from '../../components/ActionButton/ActionButton';
-import { Image } from '../../components/Image/Image';
+import { useState } from 'react';
+
 import styles from './Contact.module.scss';
+import { ContactForm } from '../../components/ContactForm/ContactForm';
+import { ContactContainer } from './ContactContainer';
 
 export const Contact = () => {
+  const [formActive, setFormActive] = useState(false);
+
+  const getComponent = () => {
+    let component: JSX.Element | any;
+    switch (formActive) {
+      case false:
+        component = (
+          <ContactContainer
+            showForm={() => {
+              setFormActive(true);
+            }}
+          />
+        );
+        break;
+      case true:
+        component = (
+          <ContactForm
+            closeForm={() => {
+              setFormActive(false);
+            }}
+          />
+        );
+        break;
+    }
+    return component;
+  };
   return (
     <section id="contact" className={styles.contactContainer}>
-      <div className={styles.contactWrapper}>
-        <div className={styles.contactContent}>
-          <h4>Kontakt</h4>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
-            necessitatibus nostrum magni esse quod inventore facilis magnam
-            dignissimos quis commodi tenetur harum recusandae non, molestias
-            dolore tempore ipsam in totam!
-          </p>
-          <ActionButton text="Wyślij wiadomość" doAction={() => {}} />
-        </div>
-        <Image
-          path="/assets/images/logo520.png"
-          alt=""
-          className={styles.contactLogo}
-        />
-      </div>
+      {getComponent()}
     </section>
   );
 };
