@@ -1,15 +1,17 @@
-import styles from './ContactForm.module.scss';
-
-import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
+
+import styles from './ContactForm.module.scss';
 import { ActionButton } from '../ActionButton/ActionButton';
+import { SentMessage } from '../SentMessage/SentMessage';
 
 type ContactFormProps = {
   closeForm: Function;
 };
 export const ContactForm = ({ closeForm }: ContactFormProps) => {
   const form: any = useRef();
-
+  const [messageSent, setMessageSent] = useState(false);
+  console.log(messageSent);
   const sendEmail = (e: any) => {
     e.preventDefault();
 
@@ -23,12 +25,17 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
       .then(
         (result) => {
           console.log(result.text);
+          setMessageSent(true);
+          setTimeout(() => {
+            setMessageSent(false);
+          }, 3000);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <div className={styles.formContainer}>
       <h4>Kontakt</h4>
@@ -66,6 +73,7 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
           <textarea className={styles.textArea} name="message" required />
         </div>
         <input className={styles.inputSubmit} type="submit" value="Wyślij" />
+        <SentMessage isSent={messageSent} />
       </form>
     </div>
   );
