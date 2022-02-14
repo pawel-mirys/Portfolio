@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+.contactContainer {
+  @include flex(center, center, column);
+  width: 100%;
+  height: 920px;
+}
+
+.contactWrapper {
+  @include flex(space-between, center, row);
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.contactContent {
+  @include flex(space-between, flex-start, column);
+  width: 30%;
+  height: 40%;
+  h4 {
+    font-size: 40px;
+  }
+  p {
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+.message {
+    display: none;
+    transition: 1s all ease-in-out;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: $secondary;
+    width: 70%;
+    height: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    &.active {
+        display: flex;
+    }
+    p {
+        text-align: center;
+        width: 90%;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+    }
+}
