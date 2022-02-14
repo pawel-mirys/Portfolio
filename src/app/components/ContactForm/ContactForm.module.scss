@@ -45,6 +45,13 @@
   resize: none;
   width: 80%;
   height: 80%;
+  padding: 5px 0 0 10px;
+  &:invalid {
+    border: 2px solid rgb(214, 44, 44);
+  }
+  &:valid {
+    border: 2px solid rgb(138, 207, 35);
+  }
 }
 
 .inputSubmit {
@@ -67,4 +74,15 @@
 .input {
   width: 50%;
   height: 30px;
+
+  padding: 0 0 0 10px;
+  &::placeholder {
+    text-align: center;
+  }
+  &:invalid {
+    border: 2px solid rgb(214, 44, 44);
+  }
+  &:valid {
+    border: 2px solid rgb(138, 207, 35);
+  }
 }

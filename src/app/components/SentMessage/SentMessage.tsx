@@ -6,7 +6,6 @@ type sentMessageProps = {
 
 export const SentMessage = ({ isSent }: sentMessageProps) => {
   let activeClass: string;
-  console.log(isSent);
   isSent === true ? (activeClass = styles.active) : (activeClass = '');
 
   return (
