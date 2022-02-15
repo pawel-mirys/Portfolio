@@ -22,7 +22,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <a href="" className={styles.arrow}>
+        <a href="#about" className={styles.arrow}>
           <Image
             path="/assets/icons/arrow.svg"
             alt="dsadsadsa"
