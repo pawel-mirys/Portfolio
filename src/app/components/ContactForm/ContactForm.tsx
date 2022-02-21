@@ -53,8 +53,6 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
 
   return (
     <div className={styles.formContainer}>
-      <h4>Kontakt</h4>
-
       <form className={styles.form} ref={form} onSubmit={sendEmail}>
         <ActionButton
           doAction={() => {

@@ -1,6 +1,5 @@
 @import '../../variables.scss';
 .silderContainer {
-  margin-top: 100px;
   width: 80%;
 }
 
@@ -10,8 +9,7 @@
 }
 
 .sliderItem {
-  width: 1200px;
-  height: 600px;
+  width: 60vw;
   border: 3px solid $primary;
   border-radius: 10px;
 }

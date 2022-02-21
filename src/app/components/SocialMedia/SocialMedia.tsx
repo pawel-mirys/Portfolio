@@ -3,9 +3,10 @@ import styles from './SocialMedia.module.scss';
 
 type SocialMediaProps = {
   variant: 'hero' | 'footer';
+  className?: string;
 };
 
-export const SocialMedia = ({ variant }: SocialMediaProps) => {
+export const SocialMedia = ({ variant, className }: SocialMediaProps) => {
   let customIcon: string = '';
 
   variant === 'hero'
@@ -13,7 +14,7 @@ export const SocialMedia = ({ variant }: SocialMediaProps) => {
     : (customIcon = styles.iconSmall);
 
   return (
-    <div className={styles.socialMediaContainer}>
+    <div className={`${styles.socialMediaContainer} ${className}`}>
       <a className={styles.socialIcon} href="">
         <Image
           path="/assets/icons/facebook.svg"

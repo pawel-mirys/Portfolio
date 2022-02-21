@@ -1,8 +1,10 @@
 @import '../../variables.scss';
 .projectsContainer {
+  display: flex;
+  justify-content: center;
   background-color: $background;
   width: 100%;
-  height: 960px;
+  height: 100vh;
   color: white;
 }
 
@@ -11,9 +13,9 @@
   margin: auto;
   width: 80%;
   height: 80%;
-  padding: 200px 0 0 0;
 
   h4 {
     font-size: 40px;
+    padding: 50px 0 0 0;
   }
 }
