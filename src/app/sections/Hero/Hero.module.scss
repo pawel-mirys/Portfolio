@@ -1,58 +1,55 @@
 @import '../../variables.scss';
-
 .heroContainer {
-  height: 100vh;
-  width: 100%;
-  background-color: $background;
-  color: $light-gray;
+    height: 100vh;
+    width: 100%;
+    background-color: $background;
+    color: $light-gray;
 }
 
 .heroWrapper {
-  width: 80%;
-  height: 80%;
-  transform: translateY(20%);
-  margin: auto;
-  @include flex(space-around, center, column);
+    width: 80%;
+    height: 80%;
+    transform: translateY(20%);
+    margin: auto;
+    @include flex(space-around, center, column);
 }
 
 .greetContainer {
-  @include flex(space-between, center, row);
-  width: 100%;
+    @include flex(space-between, center, row);
+    width: 100%;
 }
 
 .greet {
-  @include flex(space-around, flex-start, column);
-  height: 500px;
-  h1 {
-    font-size: 70px;
-  }
-  h4 {
-    font-size: 40px;
-  }
+    @include flex(space-around, flex-start, column);
+    height: 500px;
+    h1 {
+        font-size: 70px;
+    }
+    h4 {
+        font-size: 40px;
+    }
 }
 
 .hero {
-  height: 650px;
-  object-fit: cover;
+    height: 650px;
+    object-fit: cover;
 }
 
 .arrow {
-  width: 80px;
-  height: 80px;
-
-  img {
-    width: 100%;
-  }
+    width: 80px;
+    height: 80px;
+    img {
+        width: 100%;
+    }
 }
 
 // Media
-
 @media screen and (max-width: 1368px) {
-  .greet {
-    h1 {
-      font-size: 60px;
+    .greet {
+        h1 {
+            font-size: 60px;
+        }
     }
-    
     .heroWrapper {
         @include flex(space-between, center, column);
         padding: 30px 0 0 0;
@@ -60,12 +57,10 @@
         height: 100%;
         margin: auto;
     }
-    
     .greetContainer {
         @include flex(space-between, center, row);
         width: 100%;
     }
-    
     .greet {
         @include flex(space-around, flex-start, column);
         height: 500px;
@@ -76,12 +71,10 @@
             font-size: 40px;
         }
     }
-    
     .hero {
         height: 32rem;
         object-fit: cover;
     }
-    
     .arrow {
         width: 80px;
         height: 80px;
@@ -89,58 +82,59 @@
             width: 100%;
         }
     }
-    
-    // Media
-    @media screen and (max-width: 1368px) {
-        .greet {
-            h1 {
-                font-size: 60px;
-            }
-            h4 {
-                font-size: 30px;
-            }
+}
+
+// Media
+@media screen and (max-width: 1368px) {
+    .greet {
+        h1 {
+            font-size: 60px;
         }
-        .hero {
-            height: 550px;
+        h4 {
+            font-size: 30px;
         }
     }
-    
-    @media screen and (max-width: 991px) {
-        .greet {
-            height: 350px;
-            h1 {
-                font-size: 40px;
-            }
-            h4 {
-                font-size: 24px;
-            }
+    .hero {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .greet {
+        height: 350px;
+        h1 {
+            font-size: 40px;
         }
-        .hero {
-            height: 400px;
+        h4 {
+            font-size: 24px;
         }
     }
-    
-    @media screen and (max-width: 780px) {
-        .greetContainer {
-            justify-content: center;
+    .hero {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .greetContainer {
+        justify-content: center;
+    }
+    .greet {
+        align-items: center;
+        h1 {
+            font-size: 30px;
         }
-        .greet {
-            align-items: center;
-            h1 {
-                font-size: 30px;
-            }
-            h4 {
-                font-size: 18px;
-            }
-        }
-        .hero {
-            display: none;
-        }
-        .arrow {
-            width: 60px;
-            height: 60px;
-            img {
-                width: 100%;
-            }
+        h4 {
+            font-size: 18px;
         }
     }
+    .hero {
+        display: none;
+    }
+    .arrow {
+        width: 60px;
+        height: 60px;
+        img {
+            width: 100%;
+        }
+    }
+}
