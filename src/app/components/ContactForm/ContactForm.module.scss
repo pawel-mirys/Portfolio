@@ -84,3 +84,30 @@
     border: 2px solid rgb(138, 207, 35);
   }
 }
+
+//media
+
+@media screen and (max-width: 1368px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 780px) {
+  .formContainer {
+    margin-top: 20px;
+  }
+  .form {
+    width: 80%;
+  }
+  .formContainer {
+    height: 80%;
+  }
+  .closeButton {
+    padding: 10px 15px !important;
+    font-size: 14px !important;
+  }
+  .input {
+    width: 70%;
+  }
+}

@@ -49,8 +49,13 @@
 }
 
 @media screen and (max-width: 780px) {
+  .contactContainer {
+    height: 100vh;
+  }
+
   .contactWrapper {
     flex-direction: column;
+    justify-content: space-evenly;
   }
   .contactLogo {
     width: 300px;
@@ -58,8 +63,6 @@
   .contactContent {
     width: 100%;
     align-items: center;
-  }
-  .contactWrapper {
-    justify-content: space-evenly;
+    margin-top: 100px;
   }
 }

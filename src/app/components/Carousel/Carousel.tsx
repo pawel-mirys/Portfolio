@@ -5,7 +5,7 @@ import styles from './Carousel.module.scss';
 
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Carousel = () => {
   const settings = {
@@ -16,13 +16,39 @@ export const Carousel = () => {
     slidesToScroll: 1,
     lazyload: true,
     fade: true,
+    arrows: true,
   };
+
+  const getWindowWidth = () => {
+    const { innerWidth: width } = window;
+    return {
+      width,
+    };
+  };
+
+  const useWindowWidth = () => {
+    const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(getWindowWidth());
+      };
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    });
+    return windowWidth;
+  };
+  const windowWidth = useWindowWidth();
+
+  if (windowWidth.width <= 780) {
+    settings.arrows = false;
+  }
 
   return (
     <div className={styles.silderContainer}>
       <Slider className={styles.carousel} {...settings}>
         <div className={styles.slide}>
-          <a href="" id={styles.slide}>
+          <a href="">
             <Image
               className={styles.sliderItem}
               path="/assets/images/EET.png"

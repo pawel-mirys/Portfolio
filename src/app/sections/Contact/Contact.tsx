@@ -3,13 +3,12 @@ import { useState } from 'react';
 import styles from './Contact.module.scss';
 import { ContactForm } from '../../components/ContactForm/ContactForm';
 import { ContactContainer } from './ContactContainer';
-import { Footer } from '../../components/Footer/Footer';
 
 export const Contact = () => {
   const [formActive, setFormActive] = useState(false);
 
   const getComponent = () => {
-    let component: JSX.Element | any;
+    let component: JSX.Element;
     switch (formActive) {
       case false:
         component = (
