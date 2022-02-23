@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './Nav.module.scss';
 import { Image } from '../Image/Image';
@@ -10,6 +10,15 @@ export const Nav = () => {
   if (open === true) {
     activeListStyle = styles.list_active;
   }
+
+  useEffect(() => {
+    const getLinkinks = document.getElementsByClassName('Nav_link__MMYPt');
+    const links = Array.from(getLinkinks);
+    links.forEach((link) => {
+      link.addEventListener('click', () => setOpen(false));
+      return link.removeEventListener('click', () => setOpen(false));
+    });
+  });
 
   return (
     <nav className={styles.navContainer}>

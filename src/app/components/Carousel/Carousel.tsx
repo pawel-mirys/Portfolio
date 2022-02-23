@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 
 import { Image } from '../Image/Image';
@@ -5,7 +6,6 @@ import styles from './Carousel.module.scss';
 
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import { useEffect, useState } from 'react';
 
 export const Carousel = () => {
   const settings = {
