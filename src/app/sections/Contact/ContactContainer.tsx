@@ -20,6 +20,7 @@ export const ContactContainer = ({ showForm }: ContactContainerProps) => {
         </p>
         <ActionButton
           text="Wyślij wiadomość"
+          className={styles.showFormButton}
           doAction={() => {
             showForm();
           }}
