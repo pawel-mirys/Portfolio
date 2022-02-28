@@ -2,6 +2,7 @@
 .footer,
 .footerContainer {
   @include flex(space-between, center, row);
+  flex-wrap: wrap;
 }
 
 .footer {

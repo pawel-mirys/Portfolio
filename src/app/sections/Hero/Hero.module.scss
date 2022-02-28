@@ -1,18 +1,21 @@
 @import '../../variables.scss';
 
 .heroContainer {
-  height: 100vh;
+  @include flex(center, center, row);
+  transform: translateY(10vh);
+  height: 90vh;
   width: 100%;
   background-color: $background;
   color: $light-gray;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .heroWrapper {
-  width: 80%;
-  height: 80%;
-  transform: translateY(20%);
-  margin: auto;
   @include flex(space-around, center, column);
+  width: 80%;
+  height: 100%;
+  margin: auto;
 }
 
 .greetContainer {
@@ -121,6 +124,9 @@
 }
 
 @media screen and (max-width: 780px) {
+  .heroWrapper {
+    height: 70%;
+  }
   .greetContainer {
     justify-content: center;
   }
@@ -138,9 +144,5 @@
   }
   .arrow {
     width: 60px;
-    height: 60px;
-    img {
-      width: 100%;
-    }
   }
 }

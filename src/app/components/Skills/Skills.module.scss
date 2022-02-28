@@ -2,12 +2,12 @@
 .skillsCardContainer {
   @include flex(space-evenly, center, row);
   width: 100%;
-  height: 50%;
-
+  height: 60%;
   background: $gradient;
   animation: animatedgradient 5s ease alternate infinite;
   background-size: 300% 300%;
   z-index: -1;
+  overflow-y: hidden;
 }
 
 @keyframes animatedgradient {
@@ -19,5 +19,19 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1368px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 780px) {
+  .skillsCardContainer {
+    flex-direction: column;
   }
 }

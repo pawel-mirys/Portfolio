@@ -8,89 +8,28 @@ export const Skills = () => {
       <SkillCard
         title="Umiejętności"
         icons={[
-          <Icon
-            path="/assets/icons/html.svg"
-            alt=""
-            className=""
-            description="HTML"
-          />,
-          <Icon
-            path="/assets/icons/CSS.svg"
-            alt=""
-            className=""
-            description="CSS"
-          />,
-          <Icon
-            path="/assets/icons/JS.svg"
-            alt=""
-            className=""
-            description="JS"
-          />,
-          <Icon
-            path="/assets/icons/sass.svg"
-            alt=""
-            className=""
-            description="SASS"
-          />,
-          <Icon
-            path="/assets/icons/npm.svg"
-            alt=""
-            className=""
-            description="NPM"
-          />,
-          <Icon
-            path="/assets/icons/git.svg"
-            alt=""
-            className=""
-            description="GIT"
-          />,
-          <Icon
-            path="/assets/icons/figma.svg"
-            alt=""
-            className={styles.lastChild}
-            description="FIGMA"
-          />,
+          <Icon path="/assets/icons/html.svg" description="HTML" />,
+          <Icon path="/assets/icons/CSS.svg" description="CSS" />,
+          <Icon path="/assets/icons/JS.svg" description="JS" />,
+          <Icon path="/assets/icons/sass.svg" description="SASS" />,
+          <Icon path="/assets/icons/npm.svg" description="NPM" />,
+          <Icon path="/assets/icons/git.svg" description="GIT" />,
+          <Icon path="/assets/icons/figma.svg" description="FIGMA" />,
         ]}
       />
       <SkillCard
         title="W trakcie nauki"
         icons={[
-          <Icon
-            path="/assets/icons/react.svg"
-            alt=""
-            className=""
-            description="REACT"
-          />,
-          <Icon
-            path="/assets/icons/ts.svg"
-            alt=""
-            className=""
-            description="TYPE SCRIPT"
-          />,
-          <Icon path="/assets/icons/.svg" alt="" className="" description="" />,
+          <Icon path="/assets/icons/react.svg" description="REACT" />,
+          <Icon path="/assets/icons/ts.svg" description="TYPE SCRIPT" />,
         ]}
       />
       <SkillCard
         title="W planach"
         icons={[
-          <Icon
-            path="/assets/icons/mongo.svg"
-            alt=""
-            className=""
-            description="MONGO DB"
-          />,
-          <Icon
-            path="/assets/icons/node.svg"
-            alt=""
-            className=""
-            description="NODE JS"
-          />,
-          <Icon
-            path="/assets/icons/react.svg"
-            alt=""
-            className=""
-            description="REACT NATIVE"
-          />,
+          <Icon path="/assets/icons/mongo.svg" description="MONGO DB" />,
+          <Icon path="/assets/icons/node.svg" description="NODE JS" />,
+          <Icon path="/assets/icons/react.svg" description="REACT NATIVE" />,
         ]}
       />
     </div>

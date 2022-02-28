@@ -1,12 +1,40 @@
 @import '../../variables.scss';
 .iconContainer {
   @include flex(space-between, center, column);
-  width: 130px;
-  height: 120px;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
   margin: 10px;
 }
 
 .description {
+  margin-top: 10px;
   font-size: 20px;
   color: $light-gray;
+}
+
+// Media
+
+@media screen and (max-width: 1368px) {
+  .icon {
+    width: 70px;
+  }
+  .description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .icon {
+    width: 60px;
+  }
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .icon {
+    width: 50px;
+  }
 }

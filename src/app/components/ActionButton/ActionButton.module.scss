@@ -14,3 +14,10 @@
     opacity: 0.9;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .button {
+    font-size: 16px;
+    padding: 14px 30px;
+  }
+}
