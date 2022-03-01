@@ -1,56 +1,55 @@
 @import '../../variables.scss';
-
 .socialMediaContainer {
-  @include flex(space-between, center, row);
-  width: 100%;
+    @include flex(space-between, center, row);
+    width: 100%;
 }
 
 .socialIcon {
-  transition: 0.2s all ease-in-out;
-  position: relative;
-  &::after {
-    position: absolute;
-    right: 5px;
-    top: 50px;
-    border: 0.5px solid transparent;
-    border-radius: 5rem;
     transition: 0.2s all ease-in-out;
-    content: '';
-    width: 87%;
-    height: 85%;
-    z-index: -2;
-  }
-  &:hover {
-    transform: translateY(-5px);
+    position: relative;
     &::after {
-      background-color: $primary;
-      top: 1px;
+        position: absolute;
+        right: 5px;
+        top: 50px;
+        border: 0.5px solid transparent;
+        border-radius: 5rem;
+        transition: 0.2s all ease-in-out;
+        content: '';
+        width: 85%;
+        height: 85%;
+        z-index: -2;
     }
-  }
+    &:hover {
+        transform: translateY(-5px);
+        &::after {
+            background-color: $primary;
+            top: 1px;
+        }
+    }
 }
 
 .iconBig {
-  width: 90px;
+    width: 90px;
 }
 
 .iconSmall {
-  width: 50px;
+    width: 50px;
 }
 
 @media screen and (max-width: 1368px) {
-  .iconBig {
-    width: 60px;
-  }
+    .iconBig {
+        width: 60px;
+    }
 }
 
 @media screen and (max-width: 780px) {
-  .iconBig {
-    width: 50px;
-  }
-  .iconSmall {
-    width: 35px;
-  }
-  .socialMediaContainer {
-    flex-wrap: wrap;
-  }
+    .iconBig {
+        width: 50px;
+    }
+    .iconSmall {
+        width: 35px;
+    }
+    .socialMediaContainer {
+        flex-wrap: wrap;
+    }
 }

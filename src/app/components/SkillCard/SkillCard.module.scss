@@ -1,46 +1,47 @@
 @import '../../variables.scss';
 .skillCardBackground {
-  @include flex(center, center, row);
-  width: 32%;
-  height: 97%;
-  background-color: $background;
+    @include flex(center, center, row);
+    width: 32%;
+    height: 97%;
+    background-color: $background;
+    border-radius: 15px
 }
 
 .content {
-  @include flex(flex-start, center, column);
-  width: 95%;
-  height: 95%;
-  color: $light-gray;
+    @include flex(flex-start, center, column);
+    width: 95%;
+    height: 95%;
+    color: $light-gray;
 }
+
 .title {
-  font-size: 40px;
+    font-size: 40px;
 }
+
 .skillIcons {
-  @include flex(space-between, center, column);
-  flex-wrap: wrap;
-  width: 95%;
-  height: 80%;
-  margin: auto 0 auto 0;
+    @include flex(space-between, center, column);
+    flex-wrap: wrap;
+    width: 95%;
+    height: 80%;
+    margin: auto 0 auto 0;
 }
 
 // Media
-
-@media screen and (max-width: 1368px) {
-}
+@media screen and (max-width: 1368px) {}
 
 @media screen and (max-width: 991px) {
-  .title {
-    font-size: 24px;
-  }
+    .title {
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 780px) {
-  .skillCardBackground {
-    height: 32%;
-    width: 95%;
-  }
-  .skillIcons {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+    .skillCardBackground {
+        height: 32%;
+        width: 95%;
+    }
+    .skillIcons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }

@@ -1,34 +1,36 @@
 @import './variables.scss';
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 // Carousel Style Fix
-
 .slick-arrow {
-  &::before {
-    color: white !important;
-  }
+    &::before {
+        color: white !important;
+    }
 }
 
 .slick-dots {
-  li {
-    button {
-      &::before {
-        color: white !important;
-      }
+    li {
+        button {
+            &::before {
+                color: white !important;
+            }
+        }
     }
-  }
+}
+
+.slick-track {
+    overflow-x: hidden !important;
 }

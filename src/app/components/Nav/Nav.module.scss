@@ -54,7 +54,6 @@
 
 //media
 @media screen and (max-width: 991px) {
-    .logo {}
     .navbar {
         .list {
             display: flex;
@@ -75,6 +74,9 @@
         .list_active {
             left: 0%;
             opacity: 1;
+        }
+        .logo {
+            width: 80px;
         }
     }
 }

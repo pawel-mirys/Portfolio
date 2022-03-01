@@ -61,47 +61,49 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
           text="X"
           className={styles.closeButton}
         />
-        <div className={styles.formItem}>
-          <label className={styles.label}>Imię i Nazwisko *</label>
-          <input
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-              setNameInputValue(e.target.value);
-            }}
-            value={nameInputValue}
-            className={styles.input}
-            type="text"
-            name="user_name"
-            placeholder="Jan Kowalski"
-            required
-          />
-        </div>
-        <div className={styles.formItem}>
-          <label className={styles.label}>Email *</label>
-          <input
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-              setEmailInputValue(e.target.value);
-            }}
-            value={emailInputValue}
-            className={styles.input}
-            type="email"
-            name="user_email"
-            placeholder="example@gmail.com"
-            required
-          />
-        </div>
-        <div className={`${styles.formItem} ${styles.messageContainer}`}>
-          <label className={styles.label}>Wiadomość *</label>
-          <textarea
-            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
-              setMessageTextValue(e.target.value);
-            }}
-            value={messageTextValue}
-            className={styles.textArea}
-            name="message"
-            minLength={20}
-            placeholder="Wiadomość musi zawierać przynajmniej 20 znaków"
-            required
-          />
+        <div className={styles.formItemsWrapper}>
+          <div className={styles.formItem}>
+            <label className={styles.label}>Imię i Nazwisko *</label>
+            <input
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                setNameInputValue(e.target.value);
+              }}
+              value={nameInputValue}
+              className={styles.input}
+              type="text"
+              name="user_name"
+              placeholder="Jan Kowalski"
+              required
+            />
+          </div>
+          <div className={styles.formItem}>
+            <label className={styles.label}>Email *</label>
+            <input
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                setEmailInputValue(e.target.value);
+              }}
+              value={emailInputValue}
+              className={styles.input}
+              type="email"
+              name="user_email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+          <div className={`${styles.formItem} ${styles.messageContainer}`}>
+            <label className={styles.label}>Wiadomość *</label>
+            <textarea
+              onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
+                setMessageTextValue(e.target.value);
+              }}
+              value={messageTextValue}
+              className={styles.textArea}
+              name="message"
+              minLength={20}
+              placeholder="Wiadomość musi zawierać przynajmniej 20 znaków"
+              required
+            />
+          </div>
         </div>
         <input className={styles.inputSubmit} type="submit" value="Wyślij" />
         <SentMessage isSent={messageSent} />

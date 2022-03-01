@@ -25,7 +25,7 @@ export const Nav = () => {
       <div className={styles.navbar}>
         <a href="#">
           <Image
-            className="logo"
+            className={styles.logo}
             path="/assets/images/logo100.png"
             alt="Logo"
           />
