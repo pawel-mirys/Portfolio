@@ -1,5 +1,5 @@
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { MutableRefObject, useRef, useState } from 'react';
 
 import styles from './ContactForm.module.scss';
 import { ActionButton } from '../ActionButton/ActionButton';
@@ -55,7 +55,7 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
     <div className={styles.formContainer}>
       <form className={styles.form} ref={form} onSubmit={sendEmail}>
         <ActionButton
-          doAction={() => {
+          onClick={() => {
             closeForm();
           }}
           text="X"

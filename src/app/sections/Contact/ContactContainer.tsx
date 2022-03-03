@@ -1,5 +1,4 @@
 import { ActionButton } from '../../components/ActionButton/ActionButton';
-
 import { Image } from '../../components/Image/Image';
 import styles from './Contact.module.scss';
 
@@ -21,7 +20,7 @@ export const ContactContainer = ({ showForm }: ContactContainerProps) => {
         <ActionButton
           text="Wyślij wiadomość"
           className={styles.showFormButton}
-          doAction={() => {
+          onClick={() => {
             showForm();
           }}
         />

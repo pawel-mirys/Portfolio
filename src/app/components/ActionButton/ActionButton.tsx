@@ -1,12 +1,13 @@
 import styles from './ActionButton.module.scss';
+
 type ActionButtonProps = {
-  doAction: Function;
+  onClick: Function;
   text: string;
   className?: string;
 };
 
 export const ActionButton = ({
-  doAction,
+  onClick,
   text,
   className,
 }: ActionButtonProps) => {
@@ -14,7 +15,7 @@ export const ActionButton = ({
     <button
       className={`${styles.button} ${className}`}
       onClick={() => {
-        doAction();
+        onClick();
       }}
     >
       {text}
