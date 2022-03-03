@@ -1,143 +1,143 @@
 @import '../../variables.scss';
 .heroContainer {
-    @include flex(center, center, row);
-    transform: translateY(10vh);
-    height: 90vh;
-    width: 100%;
-    background-color: $background;
-    color: $light-gray;
-    overflow: hidden;
-    flex-wrap: wrap;
+  @include flex(center, center, row);
+  transform: translateY(10vh);
+  height: 90vh;
+  width: 100%;
+  background-color: $background;
+  color: $light-gray;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .heroWrapper {
-    @include flex(space-around, center, column);
-    width: 80%;
-    height: 100%;
-    margin: auto;
+  @include flex(space-around, center, column);
+  width: 80%;
+  height: 100%;
+  margin: auto;
 }
 
 .greetContainer {
-    @include flex(space-between, center, row);
-    width: 100%;
+  @include flex(space-between, center, row);
+  width: 100%;
 }
 
 .greet {
-    @include flex(space-around, flex-start, column);
-    height: 500px;
-    h1 {
-        font-size: 70px;
-    }
-    h4 {
-        font-size: 40px;
-    }
+  @include flex(space-around, flex-start, column);
+  height: 500px;
+  h1 {
+    font-size: 70px;
+  }
+  h4 {
+    font-size: 40px;
+  }
 }
 
 .hero {
-    height: 600px;
-    object-fit: cover;
+  height: 600px;
+  object-fit: cover;
 }
 
 .arrow {
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  img {
+    width: 100%;
+  }
+}
+
+// Media
+@media screen and (max-width: 1368px) {
+  .greet {
+    h1 {
+      font-size: 60px;
+    }
+  }
+  .heroWrapper {
+    @include flex(space-between, center, column);
+    padding: 30px 0 0 0;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .greetContainer {
+    @include flex(space-between, center, row);
+    width: 100%;
+  }
+  .greet {
+    @include flex(space-around, flex-start, column);
+    height: 500px;
+    h1 {
+      font-size: 70px;
+    }
+    h4 {
+      font-size: 40px;
+    }
+  }
+  .hero {
+    height: 32rem;
+    object-fit: cover;
+  }
+  .arrow {
     width: 80px;
     height: 80px;
-    margin-top: -40px;
     img {
-        width: 100%;
+      width: 100%;
     }
+  }
 }
 
 // Media
 @media screen and (max-width: 1368px) {
-    .greet {
-        h1 {
-            font-size: 60px;
-        }
+  .greet {
+    h1 {
+      font-size: 60px;
     }
-    .heroWrapper {
-        @include flex(space-between, center, column);
-        padding: 30px 0 0 0;
-        width: 80%;
-        height: 100%;
-        margin: auto;
+    h4 {
+      font-size: 30px;
     }
-    .greetContainer {
-        @include flex(space-between, center, row);
-        width: 100%;
-    }
-    .greet {
-        @include flex(space-around, flex-start, column);
-        height: 500px;
-        h1 {
-            font-size: 70px;
-        }
-        h4 {
-            font-size: 40px;
-        }
-    }
-    .hero {
-        height: 32rem;
-        object-fit: cover;
-    }
-    .arrow {
-        width: 80px;
-        height: 80px;
-        img {
-            width: 100%;
-        }
-    }
-}
-
-// Media
-@media screen and (max-width: 1368px) {
-    .greet {
-        h1 {
-            font-size: 60px;
-        }
-        h4 {
-            font-size: 30px;
-        }
-    }
-    .hero {
-        height: 550px;
-    }
+  }
+  .hero {
+    height: 550px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .greet {
-        height: 350px;
-        h1 {
-            font-size: 40px;
-        }
-        h4 {
-            font-size: 24px;
-        }
+  .greet {
+    height: 350px;
+    h1 {
+      font-size: 40px;
     }
-    .hero {
-        height: 400px;
+    h4 {
+      font-size: 24px;
     }
+  }
+  .hero {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 780px) {
-    .heroWrapper {
-        height: 70%;
+  .heroWrapper {
+    height: 70%;
+  }
+  .greetContainer {
+    justify-content: center;
+  }
+  .greet {
+    align-items: center;
+    h1 {
+      font-size: 30px;
     }
-    .greetContainer {
-        justify-content: center;
+    h4 {
+      font-size: 18px;
     }
-    .greet {
-        align-items: center;
-        h1 {
-            font-size: 30px;
-        }
-        h4 {
-            font-size: 18px;
-        }
-    }
-    .hero {
-        display: none;
-    }
-    .arrow {
-        width: 60px;
-    }
+  }
+  .hero {
+    display: none;
+  }
+  .arrow {
+    width: 60px;
+  }
 }
