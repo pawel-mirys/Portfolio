@@ -1,0 +1,59 @@
+@import '../../variables.scss';
+
+.contactContainer {
+  @include flex(center, center, column);
+  width: 100%;
+  height: calc(100vh - 140px);
+  overflow: hidden;
+}
+
+.contactWrapper {
+  @include flex(space-between, center, row);
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contactContent {
+  @include flex(space-evenly, flex-start, column);
+  width: 40%;
+  height: 50%;
+  h4 {
+    font-size: 40px;
+  }
+  p {
+    line-height: 30px;
+    width: 100%;
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1368px) {
+}
+
+@media screen and (max-width: 991px) {
+  .showFormButton {
+    width: 200px;
+    font-size: 16px !important;
+    padding: 14px 30px !important;
+  }
+  .contactLogo {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .contactWrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .contactLogo {
+    width: 300px;
+  }
+  .contactContent {
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+  }
+}
