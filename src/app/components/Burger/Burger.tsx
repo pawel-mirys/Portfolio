@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import styles from './Burger.module.scss';
 
 type buttonProps = {
@@ -6,17 +8,6 @@ type buttonProps = {
 };
 
 export const Burger = ({ open, setOpen }: buttonProps) => {
-  const bars = {
-    bar1: '',
-    bar2: '',
-    bar3: '',
-  };
-
-  if (open === true) {
-    bars.bar1 = styles.bar1_active;
-    bars.bar2 = styles.bar2_active;
-    bars.bar3 = styles.bar3_active;
-  }
   return (
     <div
       onClick={() => {
@@ -24,9 +15,9 @@ export const Burger = ({ open, setOpen }: buttonProps) => {
       }}
       className={styles.burger}
     >
-      <span className={`${styles.bar} ${bars.bar1}`}></span>
-      <span className={`${styles.bar} ${bars.bar2}`}></span>
-      <span className={`${styles.bar} ${bars.bar3}`}></span>
+      <span className={clsx(styles.bar, open && styles.bar1_active)}></span>
+      <span className={clsx(styles.bar, open && styles.bar2_active)}></span>
+      <span className={clsx(styles.bar, open && styles.bar3_active)}></span>
     </div>
   );
 };

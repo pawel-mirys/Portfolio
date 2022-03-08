@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import styles from './ActionButton.module.scss';
 
 type ActionButtonProps = {
@@ -13,7 +15,7 @@ export const ActionButton = ({
 }: ActionButtonProps) => {
   return (
     <button
-      className={`${styles.button} ${className}`}
+      className={clsx(styles.button, className)}
       onClick={() => {
         onClick();
       }}

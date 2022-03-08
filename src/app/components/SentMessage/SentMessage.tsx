@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 import styles from './SentMessage.module.scss';
 
 type sentMessageProps = {
@@ -5,11 +7,8 @@ type sentMessageProps = {
 };
 
 export const SentMessage = ({ isSent }: sentMessageProps) => {
-  let activeClass: string;
-  isSent === true ? (activeClass = styles.active) : (activeClass = '');
-
   return (
-    <div className={`${styles.message} ${activeClass}`}>
+    <div className={clsx(styles.message, isSent && styles.active)}>
       <p>Wiadomość wysłana</p>
     </div>
   );

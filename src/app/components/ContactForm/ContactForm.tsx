@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import clsx from 'clsx';
 import emailjs from '@emailjs/browser';
 
 import styles from './ContactForm.module.scss';
@@ -90,7 +91,7 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
               required
             />
           </div>
-          <div className={`${styles.formItem} ${styles.messageContainer}`}>
+          <div className={clsx(styles.formItem, styles.messageContainer)}>
             <label className={styles.label}>Wiadomość *</label>
             <textarea
               onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {

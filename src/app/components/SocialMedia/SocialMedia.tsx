@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import { Image } from '../Image/Image';
 import styles from './SocialMedia.module.scss';
 
@@ -14,33 +15,33 @@ export const SocialMedia = ({ variant, className }: SocialMediaProps) => {
     : (customIcon = styles.iconSmall);
 
   return (
-    <div className={`${styles.socialMediaContainer} ${className}`}>
+    <div className={clsx(styles.socialMediaContainer, className)}>
       <a className={styles.socialIcon} href="">
         <Image
           path="/assets/icons/facebook.svg"
           alt="facebook"
-          className={`${styles.icon} ${customIcon} facebook`}
+          className={clsx(styles.icon, customIcon, 'facebook')}
         />
       </a>
       <a className={styles.socialIcon} href="">
         <Image
           path="/assets/icons/instagram.svg"
           alt="instagram"
-          className={`${styles.icon} ${customIcon} instagram`}
+          className={clsx(styles.icon, customIcon, 'instagram')}
         />
       </a>
       <a className={styles.socialIcon} href="">
         <Image
           path="/assets/icons/github.svg"
           alt="github"
-          className={`${styles.icon} ${customIcon} github`}
+          className={clsx(styles.icon, customIcon, 'github')}
         />
       </a>
       <a className={styles.socialIcon} href="">
         <Image
           path="/assets/icons/linkedin.svg"
           alt="linkedin"
-          className={`${styles.icon} ${customIcon} linkedin`}
+          className={clsx(styles.icon, customIcon, 'linkedin')}
         />
       </a>
     </div>

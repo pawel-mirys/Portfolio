@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import styles from './Icon.module.scss';
 
 type IconProps = {
@@ -9,7 +10,7 @@ type IconProps = {
 
 export const Icon = ({ className, path, alt, description }: IconProps) => {
   return (
-    <div className={`${className}} ${styles.iconContainer}`}>
+    <div className={clsx(className, styles.iconContainer)}>
       <img
         className={styles.icon}
         src={`${process.env.PUBLIC_URL}${path}`}
