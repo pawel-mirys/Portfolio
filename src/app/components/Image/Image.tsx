@@ -1,6 +1,6 @@
 type ImageProps = {
   path: string;
-  alt: string;
+  alt?: string;
   className: string;
 };
 

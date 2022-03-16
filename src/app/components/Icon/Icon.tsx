@@ -5,7 +5,7 @@ type IconProps = {
   className?: string;
   path: string;
   alt?: string;
-  description: string;
+  description?: string;
 };
 
 export const Icon = ({ className, path, alt, description }: IconProps) => {
