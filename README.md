@@ -1,6 +1,6 @@
 Source code of my portfolio website.
 
-Idea of project:
+Idea of this project:
 
 - Skill improvement (TS, react.js, NPM, GIT).
 - Get more knowledge about used technologies.
