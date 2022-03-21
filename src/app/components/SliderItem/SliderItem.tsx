@@ -5,8 +5,8 @@ import { SliderItemLinks } from '../SliderItemPopup/SliderItemLinks';
 type SliderItemProps = {
   path: string;
   alt?: string;
-  siteLink?: string;
-  githubLink?: string;
+  siteLink: string;
+  githubLink: string;
 };
 
 export const SliderItem = ({
