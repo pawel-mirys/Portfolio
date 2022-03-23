@@ -24,5 +24,5 @@ Used packages:
 - React-Slick
 - CSS Modules
 - clsx
-
+- Swiper
 _________________________________________________________________
