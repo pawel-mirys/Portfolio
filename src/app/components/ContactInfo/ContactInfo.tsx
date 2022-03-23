@@ -11,10 +11,9 @@ export const ContactInfo = ({ showForm }: ContactInfoProps) => {
       <div className={styles.contactContent}>
         <h4>Kontakt</h4>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
-          necessitatibus nostrum magni esse quod inventore facilis magnam
-          dignissimos quis commodi tenetur harum recusandae non, molestias
-          dolore tempore ipsam in totam!
+          Jeśli chcesz się ze mną skontaktować kliknij przycisk poniżej,
+          wypełnij formularz i wyślij wiadomość. <br /> Jeśli chcesz użyć
+          swojego komunikatora możesz napisać na adres: pawel.mirys@gmail.com
         </p>
         <ActionButton
           text="Wyślij wiadomość"

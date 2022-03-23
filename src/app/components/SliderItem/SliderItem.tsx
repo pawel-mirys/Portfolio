@@ -1,6 +1,6 @@
 import styles from './SliderItem.module.scss';
 import { Image } from '../Image/Image';
-import { SliderItemLinks } from '../SliderItemPopup/SliderItemLinks';
+import { SliderItemLinks } from '../SliderItemLinks/SliderItemLinks';
 
 type SliderItemProps = {
   path: string;

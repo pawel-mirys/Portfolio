@@ -17,13 +17,8 @@
   margin: auto;
 }
 
-.greetContainer {
-  @include flex(space-between, center, row);
-  width: 100%;
-}
-
 .greet {
-  @include flex(space-around, flex-start, column);
+  @include flex(space-around, center, column);
   height: 500px;
   h1 {
     font-size: 70px;
@@ -62,11 +57,11 @@
     margin: auto;
   }
   .greetContainer {
-    @include flex(space-between, center, row);
+    @include flex(center, center, row);
     width: 100%;
   }
   .greet {
-    @include flex(space-around, flex-start, column);
+    @include flex(space-around, center, column);
     height: 500px;
     h1 {
       font-size: 70px;

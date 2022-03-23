@@ -13,13 +13,6 @@ export const Hero = () => {
             <h4>Jestem front-end developerem</h4>
             <SocialMedia variant="hero" />
           </div>
-          <div className={styles.hero}>
-            <Image
-              className={styles.hero}
-              path="/assets/images/hero.jpg"
-              alt="Me"
-            />
-          </div>
         </div>
 
         <a href="#about" className={styles.arrow}>
