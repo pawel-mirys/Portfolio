@@ -22,17 +22,17 @@ export const Carousel = () => {
     />,
     <SliderItem
       path="/assets/images/colorPicker.png"
-      siteLink="pawel-mirys.github.io/color-picker/"
+      siteLink="https://pawel-mirys.github.io/Color-Picker/"
       githubLink="https://github.com/pawel-mirys/Color-Picker"
     />,
     <SliderItem
       path="/assets/images/drumMachine.png"
-      siteLink="pawel-mirys.github.io/beatmaker/"
+      siteLink="https://pawel-mirys.github.io/BeatMaker/"
       githubLink="https://github.com/pawel-mirys/BeatMaker"
     />,
     <SliderItem
       path="/assets/images/countdown.png"
-      siteLink="pawel-mirys.github.io/timer/"
+      siteLink="https://pawel-mirys.github.io/Timer/"
       githubLink="https://github.com/pawel-mirys/Timer"
     />,
   ];
