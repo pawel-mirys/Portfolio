@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+
 import { Image } from '../Image/Image';
 import styles from './SocialMedia.module.scss';
 

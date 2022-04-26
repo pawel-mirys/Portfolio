@@ -5,8 +5,8 @@ import { Icon } from '../Icon/Icon';
 export const Skills = () => {
   const arrayOfIcons = [
     <Icon path="/assets/icons/html.svg" description="HTML" />,
-    <Icon path="/assets/icons/CSS.svg" description="CSS" />,
-    <Icon path="/assets/icons/JS.svg" description="JS" />,
+    <Icon path="/assets/icons/css.svg" description="CSS" />,
+    <Icon path="/assets/icons/js.svg" description="JS" />,
     <Icon path="/assets/icons/sass.svg" description="SASS" />,
     <Icon path="/assets/icons/npm.svg" description="NPM" />,
     <Icon path="/assets/icons/git.svg" description="GIT" />,

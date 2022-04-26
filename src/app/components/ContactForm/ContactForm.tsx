@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef, useState } from 'react';
 import clsx from 'clsx';
 import emailjs from '@emailjs/browser';
@@ -43,12 +44,9 @@ export const ContactForm = ({ closeForm }: ContactFormProps) => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           emailSent();
         },
-        (error) => {
-          console.log(error.text);
-        }
+        (error) => {}
       );
   };
 
