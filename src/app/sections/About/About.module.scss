@@ -37,6 +37,7 @@
 }
 .infoContainer {
   height: 100%;
+  transition: height 2s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,6 +72,11 @@
 
 .button {
   margin-top: 100px;
+}
+
+.infoWrapper,
+.infoWrapperMore {
+  animation: easeShow 2s;
 }
 
 @keyframes animatedgradient {

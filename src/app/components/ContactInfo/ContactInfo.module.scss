@@ -9,6 +9,7 @@
 
 .contactWrapper {
   @include flex(space-between, center, row);
+  animation: easeShow 2s;
   height: 100%;
   width: 80%;
   margin: auto;

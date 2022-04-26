@@ -2,6 +2,7 @@
 .heroContainer {
   @include flex(center, center, row);
   transform: translateY(10vh);
+
   height: 90vh;
   width: 100%;
   background-color: $background;
@@ -12,6 +13,7 @@
 
 .heroWrapper {
   @include flex(space-around, center, column);
+  animation: easeShow 2s;
   width: 80%;
   height: 100%;
   margin: auto;
