@@ -35,7 +35,7 @@ export const About = () => {
               onClick={() => {
                 setActive(true);
               }}
-              text={'Powrót'}
+              text={'Czytaj dalej'}
             />
           </div>
           <Skills />
