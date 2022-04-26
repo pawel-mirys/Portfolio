@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import { ActionButton } from '../../components/ActionButton/ActionButton';
 import { Skills } from '../../components/Skills/Skills';
 import styles from './About.module.scss';
