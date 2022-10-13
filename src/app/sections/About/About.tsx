@@ -52,7 +52,7 @@ export const About = () => {
           <p>
             Uczyłem się w Technicznych Zakładach Naukowych w Dąbrowie Górniczej
             na kierunku 'Technik elektronik'. Zacząłem studiować, lecz szybko
-            zrezygnowałem. Powodem było poczucie straty czasu jaki mogę
+            zrezygnowałem. Powodem było poczucie straty czasu, jaki mogę
             poświęcić na odkrywanie tego, co faktycznie chcę robić w
             przyszłości. Oczywiście to nie jest jedyny powód, ale nie będę ich
             tutaj wymieniać.
@@ -62,7 +62,7 @@ export const About = () => {
             sytuacji w ówczesnej pracy jako elektryk. Miałem wtedy styczność z
             automatyką zakładową, co pozwoliło mi rozwinąć pewne "zmysły"
             techniczne i logiczne. Zawsze miałem zamiłowanie do komputerów i
-            wszystkiego co z nimi związane. W latach szkolnych miałem chwilową
+            wszystkiego, co z nimi związane. W latach szkolnych miałem chwilową
             styczność z programowaniem w języku Asembler. Na własną rękę
             zacząłem się uczyć jak pisać kod pod Arduino, lecz na dłuższą metę
             widziałem w tym tylko naukę dla samego nauczenia się, więc szybko to
@@ -77,9 +77,9 @@ export const About = () => {
           </p>
 
           <p>
-            Cóż... to wszystko. Niżej jest kilka moich projektów, zerknij jeśli
+            Cóż... to wszystko. Niżej jest kilka moich projektów, zerknij, jeśli
             masz ochotę. Jednym z nich jest ta strona, którą chciałem zrobić w
-            celu poprawy umeijętności.
+            celu poprawy umiejętności.
           </p>
 
           <ActionButton
