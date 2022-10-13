@@ -16,6 +16,11 @@ export const Carousel = () => {
       githubLink="https://github.com/pawel-mirys/MBP-Myslowice"
     />,
     <SliderItem
+      path="/assets/images/Recipe-app.png"
+      siteLink="https://pawel-mirys.github.io/Recipe-App/"
+      githubLink="https://github.com/pawel-mirys/Recipe-App"
+    />,
+    <SliderItem
       path="/assets/images/travelWebsite.png"
       siteLink="https://pawel-mirys.github.io/Website-Project/"
       githubLink="https://github.com/pawel-mirys/Website-Project"
